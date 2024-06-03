@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricochet Rumble</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="front-page">
+        <h1>Welcome to Ricochet Rumble</h1>
+        <button id="single-player">Single Player</button>
+        <button id="double-player">Double Player</button>
+        <div id="game-info">
+            <h2 style="text-decoration: underline;">Description</h2>
+            <p>
+                <h2 style="color: rgb(64, 50, 81);"> > The aim of game is to destroy opponent's Titan</h2>
+            </p>
+            <h3 style="font-family: cursive;"> #  Pieces & their functions</h3>
+            <ul style="font-family: cursive;">
+                <li><strong>Titan : </strong>The main piece to Protect & Destroy the opponent's titan to win the game.</li>
+                <li><strong>Tank : </strong>Blocks bullets and moves one tile or rotates.</li>
+                <li><strong>Ricochet : </strong>Reflects the bullets diagonally.</li>
+                <li><strong>Semi-Ricochet : </strong>Reflects the bullet from its inclined surface and didappears when bullet hits the non reflecting surface.</li>
+                <li><strong>Cannon : </strong>Fires bullets vertically & can move horizontally.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="game-container" style="display: none;">
+        <button id="back-button">Back</button>
+        <div id="board"></div>
+        <div id="controls">
+            <button id="pause">Pause</button>
+            <button id="resume">Resume</button>
+            <button id="reset">Reset</button>
+            <div id="timer">Time: <span id="time">600</span> sec</div>
+            
+           
+        </div>
+        <div id="turn-display">Player 1's turn</div>
+        
+    </div>
+    <audio id="hit-sound" src="hit-sound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
